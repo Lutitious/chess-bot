@@ -35,7 +35,8 @@ class RandomMove(ExampleEngine):
         return PlayResult(random.choice(list(board.legal_moves)), None)
 
 class MoveForward(ExampleEngine):
-    """Try to move any piece forward. Preferably a pawn, then a knight, then a bishop, then rook m, then queen, then king.
+    """Try to move any piece forward. Preferably a pawn, then a knight,
+    then a bishop, then rook m, then queen, then king.
     If no piece can move forward, make a random move."""
     def search(self,board: chess.board, *args: Any) -> PlayResult:
         print(board.legal_moves)
