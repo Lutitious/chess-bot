@@ -3,3 +3,4 @@
 !/engines/README.md
 *.log
 .env
+config.yml
